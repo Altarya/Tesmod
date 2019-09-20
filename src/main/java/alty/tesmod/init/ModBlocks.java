@@ -10,6 +10,6 @@ import net.minecraft.block.material.Material;
 public class ModBlocks {
     public static final List<Block> BLOCKS = new ArrayList<Block>();
 
-    public static final Block IRON_PISTON_ORIGINAL_BLOCK = new BlockBase("", Material.IRON);
+    public static final Block IRON_PISTON_ORIGINAL_BLOCK = new BlockBase("block_iron_piston_original", Material.IRON);
 
 }
