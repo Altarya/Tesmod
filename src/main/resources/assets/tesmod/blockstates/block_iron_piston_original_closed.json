@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "facing=up":    { "model": "tesmod:block_iron_piston_original_closed" },
+		"facing=east":  { "model": "tesmod:block_iron_piston_original_closed", "y": 90, "x": 90},
+		"facing=south": { "model": "tesmod:block_iron_piston_original_closed", "y": 180, "x": 90},
+		"facing=west":  { "model": "tesmod:block_iron_piston_original_closed", "y": 270, "x": 90},
+		"facing=north": { "model": "tesmod:block_iron_piston_original_closed"},
+		"facing=down":  { "model": "tesmod:block_iron_piston_original_closed", "x": 180}
+    }
+}
