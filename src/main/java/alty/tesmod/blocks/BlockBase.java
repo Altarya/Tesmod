@@ -14,8 +14,8 @@ public class BlockBase extends Block implements IHasModel {
 
     public BlockBase(String name, Material material) {
         super(material);
-        setUnlocalizedName("block_iron_piston_original");
-        setRegistryName("registry_block_iron_piston_original");
+        setUnlocalizedName(name);
+        setRegistryName("registry_" + name);
         setCreativeTab(CreativeTabs.REDSTONE);
 
         ModBlocks.BLOCKS.add(this);

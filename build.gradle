@@ -33,6 +33,19 @@ minecraft {
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 }
 
+apply plugin: "idea"
+sourceSets.main.java.srcDir new File(buildDir, 'tmp/recompileMc/sources')
+idea {
+    module {
+        // Marks the already(!) added srcDir as "generated"
+        generatedSourceDirs += file('build/tmp/recompileMc/sources')
+    }
+}
+
+configurations {
+    externalLibs
+}
+
 dependencies {
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
@@ -54,6 +67,7 @@ dependencies {
     // for more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
+    externalLibs files('libs/Immersive Vehicles-1.12.2-15.5.0.jar', 'libs/ImmersiveEngineering-0.12-89.jar')
 
 }
 
