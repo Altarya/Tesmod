@@ -1,6 +1,0 @@
-{
-   "parent": "block/cube_all",
-   "textures": {
-       "all": "tesmod:blocks/block_iron_piston_original"
-   }
-}
